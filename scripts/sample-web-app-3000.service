@@ -1,0 +1,12 @@
+[Service]
+ExecStart=/usr/bin/node /home/ubuntu/servers/sample-web-app/bin/www
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=sample-web-app
+User=ubuntu
+Group=ubuntu
+Environment=NODE_ENV=production PORT=3000
+
+[Install]
+WantedBy=multi-user.target

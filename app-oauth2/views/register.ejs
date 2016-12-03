@@ -1,0 +1,11 @@
+<% layout('layout') -%>
+<h1>Register</h1>
+<p> instance: <%= instance %> </p>
+<form action="/oauth2/register" method="post">
+    <input type="email" name="emailAddress" placeholder="E-mail">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Register</button>
+</form>
+<p>
+    <a href="/">Home</a> | <a href="/oauth2/login">Login</a>
+</p>
